@@ -58,6 +58,8 @@ def mouseClicked():
         circle(200,300,50)
         circle(400,300,50)
 ------------------------------------------------------------------------------------------------------------------------------
+It was confusing for me to recognize what kind of variables or orders I should use since I hardky have knowledge about it. However, I'm getting how it works litttle by little. 
+------------------------------------------------------------------------------------------------------------------------------
 
 #These variables are to count the rools of the dice
 
