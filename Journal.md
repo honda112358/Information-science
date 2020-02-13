@@ -14,11 +14,11 @@ Answer
 1, We played with degital dices. It was very hard to guess the correct number. It was even doubtful if we ordered correctly.
 
 def setup():
-    size (600,600)
+    size(600, 600)
     
 def draw():
     x=0
-    
+        
 def mouseClicked():
     background(255)
     stroke(0)
@@ -28,29 +28,29 @@ def mouseClicked():
 
     
     
-    n=random(0,3.1)
+    n=random(0,6)
     print(n)
-    if 0<=n<0.5:
+    if 0<=n<1:
         circle(300,300,50)
-    if 0.5<=n<1.0:
+    if 1<=n<2:
         circle(200,200,50)
         circle(400,400,50)
-    if 1.0<=n<1.5:
+    if 2<=n<3:
         circle(200,200,50)
         circle(400,400,50)
         circle(300,300,50)
-    if 1.5<=n<2.0:
+    if 3<=n<4:
         circle(200,200,50)
         circle(400,200,50)
         circle(200,400,50)
         circle(400,400,50)
-    if 2.0<=n<2.5:
+    if 4<=n<5:
         circle(200,200,50)
         circle(400,200,50)
         circle(200,400,50)
         circle(400,400,50)
         circle(300,300,50)
-    if 2.5<=n<3.1:
+    if 5<=n<6:
         circle(200,200,50)
         circle(400,200,50)
         circle(200,400,50)
