@@ -143,6 +143,6 @@ def mouseClicked():
         circle(200,300,50)
         circle(400,300,50)
         sixes=sixes+1
-        print("Number of times six has been rolled: ", sixes)#These variables are to count the rools of the dice
+        print("Number of times six has been rolled: ", sixes)
 
 ------------------------------------------------------------------------------------------------------------------------------
