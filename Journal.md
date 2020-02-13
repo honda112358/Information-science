@@ -57,5 +57,92 @@ def mouseClicked():
         circle(400,400,50)
         circle(200,300,50)
         circle(400,300,50)
+------------------------------------------------------------------------------------------------------------------------------
 
+#These variables are to count the rools of the dice
 
+ones=0
+twos=0
+threes=0
+fours=0
+fives=0
+sixes=0
+
+def setup():
+    size(600, 600)
+    
+    
+def draw():
+    x=0
+    barGraph()
+    mouseClicked()
+    barGraph()
+    
+def barGraph():
+    global ones
+    fill(0)
+    textSize(20)
+    for x in range (6):
+        text(x+1, (90+90*x), 580)
+        
+        rect(90,550-ones,20,ones)
+        rect(180,550-twos,20,twos)
+        rect(270, 550-threes, 20, threes)
+        rect(360,550-fours, 20, fours)
+        rect(450, 550-fives, 20, fives)
+        rect(540, 550-sixes,20,sixes)
+        
+def mouseClicked():
+    global ones, twos, threes, fours, fives, sixes
+    background(255)
+    stroke(0)
+    fill(255)
+    rect(100,100, 400, 400, 10)
+    stroke(255,0,0)
+    strokeWeight(10)
+
+    
+    
+    n=random(0,6)
+    print(n)
+    if 0<=n<1:
+        circle(300,300,50)
+        ones=ones+1
+        print("Number of times one has been rolled: ", ones)
+    if 1<=n<2:
+        circle(200,200,50)
+        circle(400,400,50)
+        twos=twos+1
+        print("Number of times two has been rolled: ", twos)
+    if 2<=n<3:
+        circle(200,200,50)
+        circle(400,400,50)
+        circle(300,300,50)
+        threes=threes+1
+        print("Number of times three has been rolled: ", threes)
+    if 3<=n<4:
+        circle(200,200,50)
+        circle(400,200,50)
+        circle(200,400,50)
+        circle(400,400,50)
+        fours=fours+1
+        print("Number of times four has been rolled: ", fours)
+    if 4<=n<5:
+        circle(200,200,50)
+        circle(400,200,50)
+        circle(200,400,50)
+        circle(400,400,50)
+        circle(300,300,50)
+        fives=fives+1
+        print("Number of times one has been rolled: ", fives)
+    if 5<=n<6:
+        circle(200,200,50)
+        circle(400,200,50)
+        circle(200,400,50)
+        circle(400,400,50)
+        circle(200,300,50)
+        circle(400,300,50)
+        sixes=sixes+1
+        print("Number of times six has been rolled: ", sixes)#These variables are to count the rools of the dice
+
+------------------------------------------------------------------------------------------------------------------------------
