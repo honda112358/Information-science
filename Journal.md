@@ -188,3 +188,36 @@ def mouseClicked():
     offset=offset+1
     
 ------------------------------------------------------------------------------------------------------------------------------
+offset=60
+
+def setup():
+    size (600,600)
+    background(255)
+    
+    
+def draw():
+    x=0
+    for row in range(10):
+        line(x,0,x,600)
+        x=x+60
+
+    fill(0)
+    stroke(100,100,0)
+    x=0
+    for r in range (5):
+        rect(x,0,60,600)
+        x=x+120
+   
+    x=60
+    fill(100,20,30)
+    stroke(100,10,30)
+    global offset
+    rect(60+x,60,120,20)
+    x=offset+x
+    
+    
+def mouseClicked():
+    global offset
+    offset=offset+30
+    
+------------------------------------------------------------------------------------------------------------------------------
