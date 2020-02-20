@@ -148,3 +148,43 @@ def mouseClicked():
         print("Number of times six has been rolled: ", sixes)
 
 ------------------------------------------------------------------------------------------------------------------------------
+white = 255
+offset=50
+
+def setup():
+    size(500,500)
+    background(255)
+    
+def draw():
+    stroke(0)
+    y=50
+    for row in range(9):
+         line(0,y,500,y)
+         y=y+50
+        
+    fill(0)
+    stroke(255)
+    
+    y=0
+    for row in range(5):
+        x=0
+        for s in range(5):
+            square(x,y, 50)
+            x=x+100
+        y=y+100
+ 
+    #this are the odd rows
+    y=50
+    global offset
+    for row in range(5):
+        x=0 + offset
+        for s in range(5):
+            square(x,y, 50)
+            x=x+100
+        y=y+100
+        
+def mouseClicked():
+    global offset
+    offset=offset+1
+    
+------------------------------------------------------------------------------------------------------------------------------
