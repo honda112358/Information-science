@@ -254,6 +254,10 @@ def mouseClicked():
     global offset 
     offset=offset+120
 ------------------------------------------------------------------------------------------------------------------------------
+How your personal computer can help science battle the coronavirus while you sleep:
+
+I'm for the idea that people can cooperate with reasearch while they are sleeping. In these days, computer is greatly contributing to many science research. However, at the same time, biology is rvery complex compared to other fields of science. I feel that the risk participants may take is small because university or other responsible science institution would lead the researches. therefore, I agree with the computer contribution.
+------------------------------------------------------------------------------------------------------------------------------
 
 #definition of variables
 posx = 300
