@@ -310,6 +310,9 @@ def draw():
        
     delay(50)
 ------------------------------------------------------------------------------------------------------------------------------
+realistic approximation: Sleeping or staying at home, quaranteened people, some hubs where people gather
+------------------------------------------------------------------------------------------------------------------------------
+
 I learned that abstraction is an effective way for simulation. I found it interesting because it is similar to models in science. To abstract something, we have to see the essence of things: what is important and what is not, or what really mattters. In this case, we regarded people as a simple moving point. I think that's because what we need to know is just the interaction between moving people. I'm looking forward to going next step.
      
         
