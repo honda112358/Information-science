@@ -254,3 +254,32 @@ def mouseClicked():
     global offset 
     offset=offset+120
 ------------------------------------------------------------------------------------------------------------------------------
+
+#definition of variables
+posx = 300
+posy = 300
+
+def setup():
+    size(500,500)
+    
+def draw():
+    global posx, posy
+    background(255)
+    #create indivisuals
+    circle(posx, posy, 40)
+    posx=posx+random(-10,10)
+    posy=posy+random(-10,10)
+    if posx>500:
+        posx=500
+    if posx<0:
+        posx=0
+    if posy>500:
+        posy=500
+    if posy<0:
+        posy=0
+    delay(50)
+------------------------------------------------------------------------------------------------------------------------------
+I learned that abstraction is an effective way for simulation. I found it interesting because it is similar to models in science. To abstract something, we have to see the essence of things: what is important and what is not, or what really mattters. In this case, we regarded people as a simple moving point. I think that's because what we need to know is just the interaction between moving people. I'm looking forward to going next step.
+------------------------------------------------------------------------------------------------------------------------------
+
+
