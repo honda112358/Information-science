@@ -278,8 +278,35 @@ def draw():
     if posy<0:
         posy=0
     delay(50)
+
+------------------------------------------------------------------------------------------------------------------------------
+#definition of variables
+x = [500,450,400,350,300,250,200,150,100,50]
+y = [500,450,400,350,300,250,200,150,100,50]
+
+def setup():
+    size(500,500)
+    
+def draw():
+    global x, y
+    background(255)
+    #create indivisuals
+    for i in range(10):
+        circle(x[i], y[i], 40)
+        x[i]=x[i]+random(-10,10)
+        y[i]=y[i]+random(-10,10)
+        if x[i]>500:
+            x[i]=500
+        if x[i]<0:
+            x[i]=0
+        if y[i]>500:
+            y[i]=500
+        if y[i]<0:
+            y[i]=0
+       
+    delay(50)
 ------------------------------------------------------------------------------------------------------------------------------
 I learned that abstraction is an effective way for simulation. I found it interesting because it is similar to models in science. To abstract something, we have to see the essence of things: what is important and what is not, or what really mattters. In this case, we regarded people as a simple moving point. I think that's because what we need to know is just the interaction between moving people. I'm looking forward to going next step.
-------------------------------------------------------------------------------------------------------------------------------
-
-
+     
+        
+    
