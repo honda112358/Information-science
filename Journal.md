@@ -12,7 +12,7 @@ Answer
 
 
 1, We played with degital dices. It was very hard to guess the correct number. It was even doubtful if we ordered correctly.
-
+```
 def setup():
     size(600, 600)
     
@@ -57,10 +57,11 @@ def mouseClicked():
         circle(400,400,50)
         circle(200,300,50)
         circle(400,300,50)
+```
 ------------------------------------------------------------------------------------------------------------------------------
 It was confusing for me to recognize what kind of variables or orders I should use since I hardky have knowledge about it. However, I'm getting how it works litttle by little. 
 ------------------------------------------------------------------------------------------------------------------------------
-
+```
 #These variables are to count the rools of the dice
 
 ones=0
@@ -146,8 +147,9 @@ def mouseClicked():
         circle(400,300,50)
         sixes=sixes+1
         print("Number of times six has been rolled: ", sixes)
-
+```
 ------------------------------------------------------------------------------------------------------------------------------
+```
 white = 255
 offset=50
 
@@ -186,8 +188,9 @@ def draw():
 def mouseClicked():
     global offset
     offset=offset+1
-    
+```
 ------------------------------------------------------------------------------------------------------------------------------
+```
 offset=60
 
 def setup():
@@ -219,8 +222,9 @@ def draw():
 def mouseClicked():
     global offset
     offset=offset+30
-    
+```
 ------------------------------------------------------------------------------------------------------------------------------
+```
 offset=60
 
 def setup():
@@ -253,12 +257,15 @@ def draw():
 def mouseClicked(): 
     global offset 
     offset=offset+120
+```
 ------------------------------------------------------------------------------------------------------------------------------
 How your personal computer can help science battle the coronavirus while you sleep:
 
 I'm for the idea that people can cooperate with reasearch while they are sleeping. In these days, computer is greatly contributing to many science research. However, at the same time, biology is rvery complex compared to other fields of science. I feel that the risk participants may take is small because university or other responsible science institution would lead the researches. therefore, I agree with the computer contribution.
 ------------------------------------------------------------------------------------------------------------------------------
-
+```
+#COVID-19 simulation 
+##ver.1
 #definition of variables
 posx = 300
 posy = 300
@@ -282,8 +289,11 @@ def draw():
     if posy<0:
         posy=0
     delay(50)
-
+```
 ------------------------------------------------------------------------------------------------------------------------------
+```
+.py
+
 #definition of variables
 x = [500,450,400,350,300,250,200,150,100,50]
 y = [500,450,400,350,300,250,200,150,100,50]
@@ -309,6 +319,8 @@ def draw():
             y[i]=0
        
     delay(50)
+    
+```
 ------------------------------------------------------------------------------------------------------------------------------
 realistic approximation: Sleeping or staying at home, quaranteened people, some hubs where people gather
 ------------------------------------------------------------------------------------------------------------------------------
